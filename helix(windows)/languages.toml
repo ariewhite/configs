@@ -1,0 +1,34 @@
+# languages.toml
+[[language]]
+name = "c"
+
+[language.indent]
+tab-width = 4
+unit = "    "
+
+[[language]]
+name = "cpp"
+scope = "source.cpp"
+file-types = ["cpp", "cc", "cxx", "h", "hpp", "hxx"]
+roots = ["CMakeLists.txt", "Makefiles", ".git", "compile_commands.json"]
+auto-format = true
+formatter = { command = "clang-format", args = ["--style=Google"] }
+language-servers =  ["clangd"]
+indent = { tab-width = 4, unit = "    " }
+
+
+[keys.normal]
+"C-b" = ":sh mingw32-make.exe"
+"C-d" = ":lsp-definition"
+"C-h" = ":lsp-hover"
+"C-f" = ":format"
+"C-s" = ":w"
+
+[[language]]
+name = "cmake"
+auto-format = true
+language-servers = [{name = "neocmakelsp"}]
+
+[language-server.neocmakelsp]
+command = "neocmakelsp"
+args  = ["--stdio"]

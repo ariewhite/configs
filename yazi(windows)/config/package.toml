@@ -1,0 +1,29 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "d1c8baa"
+hash = "c3f5c63722344045822f121efe2d2553"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine"
+rev = "8343340"
+hash = "4db02f6957741233f6fadcc9d8dbcfac"
+
+[[flavor.deps]]
+use = "BennyOe/tokyo-night"
+rev = "5f56364"
+hash = "62e55d8e4af15456907631e6536eb994"
+
+[[flavor.deps]]
+use = "gosxrgxx/flexoki-dark"
+rev = "28e1977"
+hash = "e83c95d5193c0d2165e961955e521a15"
+
+[[flavor.deps]]
+use = "kmlupreti/ayu-dark"
+rev = "648a178"
+hash = "2ebdd4e3e00d6612bfa64dd7ca3dac4f"
+
+[[flavor.deps]]
+use = "Chromium-3-Oxide/everforest-medium"
+rev = "0158f0f"
+hash = "e6a51e72d652374ab50123c762f4bf"
